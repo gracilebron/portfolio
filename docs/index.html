@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script src="app.js" defer></script>
+
+		<title>Portfolio</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<!-- Navigation -->
+			<div id="hamburguer">
+				<button onclick="sidebar()">
+					<nav>
+						<h2>Portfolio</h2>
+						<h3 id="aboutTab" onclick="show('about')">About</h3>
+						<h3 id="projectsTab" onclick="show('projects')">Projects</h3>
+						<h3 id="certificationsTab" onclick="show('certifications')">
+							Certifications
+						</h3>
+					</nav>
+				</button>
+				<h1>Graciela N. Lebron</h1>
+			</div>
+
+			<!-- Social links -->
+			<div id="socials">
+				<a href="https://www.indeed.com" target="_blank">
+					<img src="assets/indeed-df938946.svg" alt="indeed" />
+				</a>
+				<a href="https://www.handshake.com" target="_blank">
+					<img src="assets/handshake-logo.png" alt="handshake" />
+				</a>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<main>
+			<!-- About -->
+			<div id="about">
+				<figure>
+					<img src="assets/profile.jpg" alt="Profile Picture" />
+				</figure>
+				<p>Bio-medical Engineering student.</p>
+				<a
+					href="assets/Resume_Graciela_Lebron.pdf"
+					id="resume-button"
+					target="_blank"
+					>Resume</a
+				>
+			</div>
+
+			<!-- Projects -->
+			<div id="projects" hidden>
+				<figure></figure>
+			</div>
+
+			<!-- Certifications -->
+			<div id="certifications" hidden>
+				<figure></figure>
+			</div>
+		</main>
+	</body>
+</html>
+
+<!-- Hosted at: https://cmachin.github.io/portfolio/ -->

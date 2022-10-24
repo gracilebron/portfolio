@@ -1,0 +1,206 @@
+:root {
+	--primary-color: #8f707d;
+	--secondary-color: #f9c3ee;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	/* border: 1px solid red; */
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: var(--primary-color);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+#hamburguer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 16rem;
+}
+
+#hamburguer button {
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	padding: 0;
+	background: linear-gradient(
+		to bottom,
+		white,
+		white 20%,
+		var(--primary-color) 20%,
+		var(--primary-color) 40%,
+		white 40%,
+		white 60%,
+		var(--primary-color) 60%,
+		var(--primary-color) 80%,
+		white 80%,
+		white 100%
+	);
+}
+
+#hamburguer button:hover {
+	background: linear-gradient(
+		to bottom,
+		var(--secondary-color),
+		var(--secondary-color) 20%,
+		var(--primary-color) 20%,
+		var(--primary-color) 40%,
+		var(--secondary-color) 40%,
+		var(--secondary-color) 60%,
+		var(--primary-color) 60%,
+		var(--primary-color) 80%,
+		var(--secondary-color) 80%,
+		var(--secondary-color) 100%
+	);
+}
+
+#hamburguer button:hover {
+	cursor: pointer;
+}
+
+#hamburguer nav {
+	position: fixed;
+	top: 3rem;
+	left: -10rem;
+	background: var(--primary-color);
+	height: 100vh;
+	width: 10rem;
+	text-align: left;
+	color: white;
+	z-index: 0;
+	transition: left 0.2s;
+}
+
+#hamburguer h1 {
+	font-size: x-large;
+	font-weight: 10;
+}
+
+#hamburguer h2 {
+	cursor: default;
+	font-size: x-large;
+	font-weight: 800;
+	text-indent: 0.5rem;
+}
+
+#hamburguer h3 {
+	font-size: large;
+	font-weight: 100;
+	text-indent: 1rem;
+}
+
+#hamburguer h3:hover {
+	color: var(--secondary-color) !important;
+}
+
+#socials {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 8rem;
+}
+
+#socials a {
+	text-decoration: none;
+}
+
+#socials a:visited {
+	color: white;
+}
+
+#socials a:link {
+	color: white;
+}
+
+#socials img {
+	width: 2.5rem;
+}
+
+main {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+main > * {
+	opacity: 0%;
+	transition: opacity 0.2s;
+}
+
+#about p {
+	margin: 1rem 1rem 2rem 1rem;
+	text-align: justify;
+	max-width: 30rem;
+	color: var(--primary-color);
+}
+
+#resume-button {
+	text-decoration: none;
+	background: var(--primary-color);
+	color: white;
+	border-radius: 10rem;
+	padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#resume-button:visited {
+	color: white;
+}
+
+#resume-button:hover {
+	background-color: var(--secondary-color);
+}
+
+#about img {
+	border-radius: 10rem;
+	width: 15rem;
+}
+
+#projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#projects img {
+	width: 20rem;
+}
+
+#projects figcaption {
+	font-size: larger;
+	font-weight: 600;
+}
+
+#projects a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+#projects a:visited {
+	color: var(--primary-color);
+}
+
+#certifications {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#certifications img {
+	width: 20rem;
+}
