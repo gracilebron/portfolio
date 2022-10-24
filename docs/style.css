@@ -75,7 +75,7 @@ header {
 
 #hamburguer nav {
 	position: fixed;
-	top: 4rem;
+	top: 3rem;
 	left: -10rem;
 	background: var(--primary-color);
 	height: 100vh;
@@ -83,6 +83,7 @@ header {
 	text-align: left;
 	color: white;
 	transition: left 0.2s;
+	z-index: -1;
 }
 
 header h1 {
