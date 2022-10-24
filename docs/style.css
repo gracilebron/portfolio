@@ -5,7 +5,7 @@
 
 * {
 	font-family: Arial, Helvetica, sans-serif;
-	/* border: 1px solid red; */
+	border: 1px solid red;
 }
 
 html,
@@ -27,9 +27,10 @@ header {
 
 #hamburguer {
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	align-items: center;
-	width: 16rem;
+	margin-left: 1rem;
+	width: 5rem;
 }
 
 #hamburguer button {
@@ -74,18 +75,17 @@ header {
 
 #hamburguer nav {
 	position: fixed;
-	top: 3rem;
+	top: 4rem;
 	left: -10rem;
 	background: var(--primary-color);
 	height: 100vh;
 	width: 10rem;
 	text-align: left;
 	color: white;
-	z-index: 0;
 	transition: left 0.2s;
 }
 
-#hamburguer h1 {
+header h1 {
 	font-size: x-large;
 	font-weight: 10;
 }
@@ -109,9 +109,10 @@ header {
 
 #socials {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 8rem;
+	justify-content: space-between;
+	/* align-items: center; */
+	width: 5rem;
+	margin-right: 1rem;
 }
 
 #socials a {
@@ -127,12 +128,13 @@ header {
 }
 
 #socials img {
-	width: 2.5rem;
+	/* margin-right: 1rem; */
+	width: 2rem;
 }
 
 main {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	text-align: center;
 }
 
