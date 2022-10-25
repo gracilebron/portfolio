@@ -183,20 +183,6 @@ main > * {
 	width: 20rem;
 }
 
-#projects figcaption {
-	font-size: larger;
-	font-weight: 600;
-}
-
-#projects a {
-	text-decoration: none;
-	color: var(--primary-color);
-}
-
-#projects a:visited {
-	color: var(--primary-color);
-}
-
 #certifications {
 	display: flex;
 	flex-wrap: wrap;
@@ -206,4 +192,10 @@ main > * {
 
 #certifications img {
 	width: 20rem;
+}
+
+figcaption {
+	font-size: larger;
+	font-weight: 600;
+	color: var(--primary-color);
 }
