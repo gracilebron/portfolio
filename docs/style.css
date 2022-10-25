@@ -18,8 +18,8 @@ header {
 	background: var(--primary-color);
 	color: white;
 	display: flex;
-	/* justify-content: space-between; */
-	/* align-items: flex-start; */
+	justify-content: space-between;
+	align-items: center;
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -30,7 +30,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin-left: 1rem;
-	width: calc(50vw + 8.5rem);
 }
 
 #hamburguer button {
@@ -86,10 +85,9 @@ header {
 	z-index: -1;
 }
 
-#hamburguer h1 {
+header h1 {
 	font-size: x-large;
 	font-weight: 10;
-	align-self: center;
 }
 
 #hamburguer h2 {
@@ -111,10 +109,9 @@ header {
 
 #socials {
 	display: flex;
-	/* justify-content: space-between; */
-	/* align-items: center; */
-	/* width: 5rem; */
-	/* margin-right: 1rem; */
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 1rem;
 }
 
 #socials a {
@@ -129,9 +126,8 @@ header {
 	color: white;
 }
 
-#socials img {
-	margin-right: 1rem;
-	width: 2rem;
+#socials i {
+	font-size: 2rem;
 }
 
 main {
@@ -238,6 +234,7 @@ ul {
 #projects img {
 	width: 20vw;
 	min-width: 20rem;
+	border-radius: 3rem;
 }
 
 #certifications {
