@@ -65,9 +65,7 @@ export default function Experience() {
 									})}
 									{item.certificate ? (
 										<Button
-											href={
-												"portfolio/src/assets/certificates/" + item.certificate
-											}
+											href={"portfolio/certificates/" + item.certificate}
 											target="_blank"
 										>
 											View Certificate

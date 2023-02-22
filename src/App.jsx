@@ -1,6 +1,5 @@
 import { AnimatePresence } from "framer-motion";
-import { lazy, Suspense } from "react";
-import { Spinner } from "react-bootstrap";
+import { lazy } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Animation from "./components/Animation";
 import Navbar from "./components/Navbar";
@@ -15,19 +14,17 @@ function App() {
 	const location = useLocation();
 
 	return (
-		<AnimatePresence>
-			<Suspense fallback={<Spinner animation="border" className="loader" />}>
-				<Routes key={location.pathname} location={location}>
-					<Route element={<Navbar />}>
-						<Route element={<Animation />}>
-							<Route path="/" element={<Home />} />
-							<Route path="/projects" element={<Projects />} />
-							<Route path="/experience" element={<Experience />} />
-							<Route path="/designs" element={<Designs />} />
-						</Route>
+		<AnimatePresence mode="wait">
+			<Routes key={location.pathname} location={location}>
+				<Route element={<Navbar />}>
+					<Route element={<Animation />}>
+						<Route path="/" element={<Home />} />
+						<Route path="/projects" element={<Projects />} />
+						<Route path="/experience" element={<Experience />} />
+						<Route path="/designs" element={<Designs />} />
 					</Route>
-				</Routes>
-			</Suspense>
+				</Route>
+			</Routes>
 		</AnimatePresence>
 	);
 }

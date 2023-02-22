@@ -38,7 +38,7 @@ export default function Home() {
 			</Carousel>
 			<Button
 				variant="primary"
-				href="portfolio/src/assets/documents/Resume_Graciela_Lebron.pdf"
+				href="/portfolio/documents/Resume_Graciela_Lebron.pdf"
 				target="_blank"
 			>
 				View Resume
