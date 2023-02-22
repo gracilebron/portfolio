@@ -20,16 +20,17 @@ body {
 
 .slide {
 	background: #eae4e9;
-	height: 40rem;
+	height: 45rem;
 	/* border: 1px solid red; */
 }
 
 .slide img {
 	height: 30rem;
-	max-width: 100%;
+	max-width: 95%;
 	display: block;
-	margin: auto;
-	/* border: 1px solid blue; */
+	margin: 3rem auto 0 auto;
+	box-shadow: var(--shadow);
+	border-radius: 3rem;
 }
 
 .slide:hover {
@@ -115,4 +116,15 @@ body {
 	left: 50vw;
 	top: 30vh;
 	color: var(--primary);
+}
+
+@media only screen and (max-width: 600px) {
+	.slide {
+		height: 35rem;
+	}
+
+	.slide img {
+		margin: 3rem auto 0 auto;
+		height: 20rem;
+	}
 }
