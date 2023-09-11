@@ -1,8 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import { lazy } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Animation from "./components/Animation";
-import Navbar from "./components/Navbar";
+import Layout from "./components/Layout";
 
 // Lazy imports
 const Home = lazy(() => import("./pages/Home"));
@@ -16,13 +15,11 @@ function App() {
 	return (
 		<AnimatePresence mode="wait">
 			<Routes key={location.pathname} location={location}>
-				<Route element={<Navbar />}>
-					<Route element={<Animation />}>
+				<Route element={<Layout />}>
 						<Route path="/" element={<Home />} />
 						<Route path="/projects" element={<Projects />} />
 						<Route path="/experience" element={<Experience />} />
 						<Route path="/designs" element={<Designs />} />
-					</Route>
 				</Route>
 			</Routes>
 		</AnimatePresence>
