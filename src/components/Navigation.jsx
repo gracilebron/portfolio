@@ -14,6 +14,7 @@ export default function Navigation() {
 					<Nav activeKey={"#" + useLocation().pathname} className="me-auto">							<Nav.Link href="#/projects">Projects</Nav.Link>
 							<Nav.Link href="#/designs">Designs</Nav.Link>
 							<Nav.Link href="#/experience">Experience</Nav.Link>
+							<Nav.Link href="#/certifications">Certifications</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

@@ -65,6 +65,28 @@ body {
     font-weight: 100;
 }
 
+.certifications {
+    margin-top: 5rem;
+}
+
+.certifications h1 {
+    margin: 3rem 0 1rem 0;
+    border-bottom: 0.2rem solid var(--primary);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.certifications a {
+    display: flex;
+    justify-content: center;
+}
+
+.certifications img {
+    max-width: 40rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
 .item-cards {
     display: flex;
     justify-content: center;
